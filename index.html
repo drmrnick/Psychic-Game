@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="Directions-Text">
+        Guess what letter I am thinking of, press a key to guess.
+    </p>
+    <p>
+        <p id="lettersGuessed">
+        Letters that you have guessed so far.
+    </p>
+    <script type="text/javascript">
+        //User guess
+        var letterset = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        document.onkeyup = function (event) {
+            var userguess = letterset;
+            userguess.getElementById(letterset);
+            console.log(userguess[0]);
+        }
+        guessesLeft = 9;
+        lettersGuessed.length = 0;
+
+        if (( userguess === compguess[0]) & (guessesLeft) > 0) {
+
+        }
+        
+        else (( userguess === compguess[0]) & (guessesLeft <0)) {
+
+        }
+
+        //Computer guesses
+        var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        docement.onkeyup = function (event) {
+            var compGuess = computerChoices[Math.floor(Math.random() *
+                computerChoices.length)];
+            computerChoices.getElementById(compGuess);
+            console.log(compGuess[0]);
+        }
+        computerGuess.length = 0;
+
+        //Initial computer letter
+
+
+
+        
+        
+
+
+
+
+
+        //4. Wins: (# of times the user has guessed the letter correctly)
+
+        //5. Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+
+        //6. Guesses Left: (# of guesses left. This will update)
+
+        //7. Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.
+
+        //8. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+
+        //9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when
+        //the user wins).
+    </script>
+
+
+</body>
+
+</html>
